@@ -1,7 +1,3 @@
-This project enables users to search YouTube videos through voice or text input, filter the search results based on video length and recency, and use an AI language model to recommend the most relevant video based on title analysis.
+This project allows users to search for YouTube videos using either voice or text input. It uses the YouTube Data API to fetch videos uploaded within the last 20 days and filters them to include only those between 4 and 25 minutes long. The video titles are then analyzed by Google’s Gemini AI language model to recommend the most relevant and well-titled video based on the user’s query. Users can run the script and choose their preferred input method; if voice input is selected, the script listens for speech and converts it into text. The final output shows a list of relevant videos along with the AI’s recommendation for the best video.
 
-• Supports both voice and text search queries.
-• Uses YouTube Data API to fetch videos uploaded in the last 20 days.
-• Filters videos to those between 4 and 25 minutes long.
-• Analyzes video titles with Google Gemini AI model to pick the best match.
-• Displays recommended video titles with URLs for easy access.
+To set up the project, you need Python 3.8 or higher and API keys for both the YouTube Data API and Google Gemini AI. These keys should be stored in a .env file in the project directory. The necessary Python libraries can be installed via pip using a requirements.txt file. The script requires a working microphone for voice input and an internet connection for API calls. Users should be aware of API quotas and limitations depending on their Google Cloud account. For any questions or further support, contact details are provided.
